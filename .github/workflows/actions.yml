@@ -13,12 +13,4 @@ jobs:
             assignees: |
              SnehaDavari
              
-        - run: |
-            echo ${{ steps.issue.outputs.issue }} 
-        - uses: ./.github/actions/hello
-          id: hello
-          with:
-             who-to-greet: "World"
-        - run: |
-            echo "Time: ${{ steps.hello.outputs.time }}"
-            echo $Hello
+         
